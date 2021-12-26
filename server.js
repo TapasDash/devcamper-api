@@ -9,6 +9,6 @@ const app = express();
 const { PORT, NODE_ENV } = process.env;
 
 app.listen(
-  PORT,
+  PORT || 5000,
   console.log(`App is running on ${NODE_ENV} listening on the ${PORT}`)
 );
