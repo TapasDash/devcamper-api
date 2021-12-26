@@ -1,8 +1,10 @@
 import mongoose from "mongoose";
 import slugify from "slugify";
-import geocoder from "../utils/geocoder";
+import geocoder from "../utils/geocoder.js";
 
-const BootcampSchema = new mongoose.Schema(
+const { Schema } = mongoose;
+
+const BootcampSchema = new Schema(
   {
     name: {
       type: String,
@@ -100,7 +102,7 @@ const BootcampSchema = new mongoose.Schema(
       default: Date.now,
     },
     user: {
-      type: mongoose.Schema.ObjectId,
+      type: Schema.ObjectId,
       ref: "User",
       required: true,
     },

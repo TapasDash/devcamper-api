@@ -1,8 +1,8 @@
 import path from "path";
 import ErrorResponse from "../utils/errorResponse.js";
 import asyncHandler from "../middleware/async";
-import geocoder from "../utils/geocoder";
-import Bootcamp from "../models/Bootcamp";
+import geocoder from "../utils/geocoder.js";
+import Bootcamp from "../models/Bootcamp.js";
 
 // @desc      Get all bootcamps
 // @route     GET /api/v1/bootcamps
